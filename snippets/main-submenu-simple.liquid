@@ -1,0 +1,147 @@
+
+
+{%- if  link.title !='' -%}
+
+<div class="dropdown-menu   mystyle" >
+  <ul class="mystyle_class">
+    {%- for child_level_2 in level_2.links -%}
+        <li  onmouseenter="
+          this.parentElement.nextElementSibling.childNodes.forEach(item=>{
+                item.setAttribute('style','display:none')
+          })
+         document.getElementById('{{ child_level_2.url }}').setAttribute('style',' display: flex;');
+         
+          
+        this.parentNode.childNodes.forEach(item=>{
+          
+             item.children[0].setAttribute('style',' color: #333333;');
+        })
+          this.children[0].setAttribute('style',' color:{{ settings.color_header_sticky_menu_hover }}; ');
+          
+        ">
+             <a href="{{ child_level_2.url }}"><span>{{ child_level_2.title }}</span></a>   
+        </li>
+    {%- endfor -%}
+  </ul>
+  <div class="mystyle_con">
+    {%- for child_level_2 in level_2.links -%}
+        <div id="{{ child_level_2.url }}">
+                {%- assign child_list_handle = return | last | strip -%}
+                {%- assign level_3 = linklists[child_list_handle] -%}
+                {%- if level_3.empty? -%}
+                {%- assign child_list_handle = child_level_2.title | handle -%}
+                {%- assign level_3 = linklists[child_list_handle] -%}
+                {%- endif -%}
+                {%- if level_3.links != blank -%}
+                     {%- for child_level_3 in level_3.links -%}
+                       <a class="pro_item" href="{{ child_level_3.object.url}}?variant={{child_level_3.object.first_available_variant.id }}">
+                           <img width="150" height="150"  
+                               {%- if child_level_3.object.images[0] != blank -%}
+                                   src="/cdn/shop/{{ child_level_3.object.images[0]  }}"
+                               {% elsif child_level_3.object.image != blank  %}
+                                   src="/cdn/shop/{{ child_level_3.object.image  }}"
+                               {%- endif -%}
+                              alt="" class="pro_img" />
+                           <div>{{ child_level_3.object.title  }}</div>
+                       </a>
+                      {%- endfor -%}
+                {%- endif -%}
+        </div>
+    {%- endfor -%}
+  
+
+    
+  </div>
+
+</div>
+
+{%- else -%}
+<div class="dropdown-menu   wheel_style" >
+  <div class="wheel_style_con">
+   {%- for child_level_2 in level_2.links -%}
+        {%- assign child_list_handle = child_level_2.title | handle -%}
+        {%- assign level_3 = collections[child_list_handle] -%}
+        <a class="wheel_style_item" href="{{level_3.url}}">
+            <img src="/cdn/shop/{{level_3.image}}" alt=""   />
+            <span>
+               <div>{{level_3.title}}</div>
+               <div>{{level_3.description}}</div>
+            </span>
+        </a> 
+    {%- endfor -%}
+  </div>
+</div>
+{%- endif -%}
+
+
+
+
+
+{%- if  0==1 -%}
+
+<!-- <div class="dropdown-menu">
+  <div class="row tt-col-list">
+    <div class="col">
+      <ul class="tt-megamenu-submenu tt-megamenu-preview">
+        
+        {%- for child_level_2 in level_2.links -%}
+        <li><a href="{{ child_level_2.url }}"><span>{{ child_level_2.title }}</span></a>
+        
+          {%- capture return -%}{%- include "get_linklist_dropdown", link: child_level_2 -%}{%- endcapture -%}{%- assign return = return | split: "%%" -%}{%- assign has_drop_down = return | first | strip -%}{%- assign child_list_handle = return | last | strip -%}
+
+          {%- assign level_3 = linklists[child_list_handle] -%}
+          {%- if level_3.empty? -%}
+          {%- assign child_list_handle = child_level_2.title | handle -%}
+          {%- assign level_3 = linklists[child_list_handle] -%}
+          {%- endif -%}
+
+          {%- if level_3.links != blank -%}
+          <ul>
+            {%- for child_level_3 in level_3.links -%}
+            <li>
+                <img src="/cdn/shop/{{ child_level_3.object.images[0] }}" alt="" />
+              
+              <a href="{{ child_level_3.url }}"><span>{{ child_level_3.title  }}</span></a>
+
+              {%- capture return -%}{%- include "get_linklist_dropdown", link: child_level_3 -%}{%- endcapture -%}{%- assign return = return | split: "%%" -%}{%- assign has_drop_down = return | first | strip -%}{%- assign child_list_handle = return | last | strip -%}
+
+              {%- assign level_4 = linklists[child_list_handle] -%}
+              {%- if level_4.empty? -%}
+              {%- assign child_list_handle = child_level_3.title | handle -%}
+              {%- assign level_4 = linklists[child_list_handle] -%}
+              {%- endif -%}
+
+              {%- if level_4.links != blank -%}
+              <ul>
+                {%- for child_level_4 in level_4.links -%}
+                <li>
+                  <a href="{{ child_level_4.url | downcase }}"><span>{{ child_level_4.title }}</span></a>
+
+                  {%- capture return -%}{%- include "get_linklist_dropdown", link: child_level_4 -%}{%- endcapture -%}{%- assign return = return | split: "%%" -%}{%- assign has_drop_down = return | first | strip -%}{%- assign child_list_handle = return | last | strip -%}
+
+                  {%- if has_drop_down == "true" -%}
+                  {%- assign level_5 = linklists[child_list_handle] -%}
+                  {%- unless level_5.empty? -%}
+                  <ul>
+                    {%- for child_level_5 in level_5.links -%}
+                    <li><a href="{{ child_level_5.url | downcase }}">{{ child_level_5.title }}</a></li>
+                    {%- endfor -%}
+                  </ul>
+                  {%- endunless -%}
+                  {%- endif -%}
+                </li>
+                {%- endfor -%}
+              </ul>
+              {%- endif -%}
+            </li>
+            {%- endfor -%}
+          </ul>
+          {%- endif -%}
+
+        </li>
+        {%- endfor -%}
+      </ul>
+    </div>
+  </div>
+</div> -->
+  {%- endif -%}
