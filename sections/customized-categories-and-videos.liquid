@@ -2,67 +2,98 @@
 {{ 'component-slider.css' | asset_url | stylesheet_tag }}
 
 {%- style -%}
-  .multicolumn {
-    border: 5px solid green;
-  }
+    .section-{{ section.id }}
+    -padding {
+      padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+      padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+    }
 
-  .section-{{ section.id }}-padding {
-    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
-    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
-  }
+    @media screen and (min-width: 750px) {
+      .section-{{ section.id }}-padding {
+        padding-top: {{ section.settings.padding_top }}px;
+        padding-bottom: {{ section.settings.padding_bottom }}px;
+      }
+    }
+    @media (max-width: 768px) {
+    .block-item {
+      flex-direction: column; /* Stack items on mobile */
+      align-items: flex-start; /* Align items to the start */
+      flex: 1 1 100%; /* Full width on mobile */
+    }
 
-  @media screen and (min-width: 750px) {
-    .section-{{ section.id }}-padding {
-      padding-top: {{ section.settings.padding_top }}px;
-      padding-bottom: {{ section.settings.padding_bottom }}px;
+    .multicolumn-card__image-wrapper {
+      margin-right: 0; /* Remove margin on mobile */
+      margin-bottom: 10px; /* Add space below image */
     }
   }
+    .page-width {
+      max-width: 80%;
+      /* Change max-width to 100% or any value you prefer */
+      padding: 0 20px;
+      /* Adjust padding to give breathing space */
+    }
 
-  .page-width {
-    max-width: 100%; /* Change max-width to 100% or any value you prefer */
-    padding: 0 20px; /* Adjust padding to give breathing space */
-  }
-
-  .section-container {
-    display: flex;
-    flex-direction: column;
-    max-width: 100%; /* Set to full width */
-    border: 5px dotted red;
-  }
-
-  @media screen and (min-width: 750px) {
     .section-container {
-      flex-direction: row;
-      justify-content: space-between;
-      width: 100%; /* Ensure it takes up the full width */
+      display: flex;
+      flex-direction: column;
+      max-width: 100%;
+      /* Set to full width */
+      /* border: 5px dotted red; */
     }
+    .block-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping for responsive layout */
+    gap: 20px; /* Space between items */
   }
 
-  .left-column {
-    flex: 1;
-    padding-right: 20px;
+  .block-item {
+    /* border: 2px solid blue; */
+    display: flex;
+    align-items: center; /* Align items vertically */
+    flex: 1 1 calc(50% - 20px); /* Two columns on desktop */
+    box-sizing: border-box; /* Include padding in width */
   }
 
-  .right-column {
-    flex: 1;
+  .multicolumn-card__image-wrapper {
+    margin-right: 10px; /* Space between image and text */
   }
 
-  .multicolumn-card__video-wrapper {
-    position: relative;
-    width: 100%;
-    padding-bottom: 56.25%; /* 16:9 aspect ratio */
-    height: 0;
-    overflow: hidden;
-  }
 
-  .multicolumn-card__video-wrapper iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border: 0;
-  }
+    @media screen and (min-width: 750px) {
+      .section-container {
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        /* Ensure it takes up the full width */
+      }
+    }
+
+    .left-column {
+      flex: 1;
+      padding-right: 20px;
+    }
+
+    .right-column {
+      flex: 1;
+    }
+
+    .multicolumn-card__video-wrapper {
+      position: relative;
+      width: 100%;
+      padding-bottom: 56.25%;
+      /* 16:9 aspect ratio */
+      height: 0;
+      overflow: hidden;
+    }
+
+    .multicolumn-card__video-wrapper iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
 {%- endstyle -%}
 
 <div class="multicolumn color-{{ section.settings.color_scheme }} gradient{% unless section.settings.background_style == 'none' %} background-{{ section.settings.background_style }}{% endunless %}">
@@ -76,14 +107,38 @@
     {%- endunless -%}
 
     <div class="section-container">
-      <!-- Left Column for Content -->
       <div class="left-column">
         <h3>{{ section.settings.left_column_title }}</h3>
-        <ul>
-          {%- for collection in collections -%}
-            <li>{{ collection.title }}</li>
+        <div class="block-container">
+          {%- for block in section.blocks -%}
+            <div class="block-item">
+              <!-- Display the image if available -->
+              {%- if block.settings.image != blank -%}
+                <div class="multicolumn-card__image-wrapper">
+                  <div class="media" style="width: 100px; height: 100px;">
+                    {{
+                      block.settings.image
+                      | image_url: width: 100, height: 100
+                      | image_tag: width: 100, height: 100, class: 'multicolumn-card__image'
+                    }}
+                  </div>
+                </div>
+              {%- endif -%}
+
+              <!-- Display the title of each block -->
+              <div>
+                {%- if block.settings.title != blank -%}
+                  <h3 class="inline-richtext">{{ block.settings.title }}</h3>
+                {%- endif -%}
+
+                <!-- Display the link if available -->
+                {%- if block.settings.link_label != blank and block.settings.link != blank -%}
+                  <a href="{{ block.settings.link }}">{{ block.settings.link_label }}</a>
+                {%- endif -%}
+              </div>
+            </div>
           {%- endfor -%}
-        </ul>
+        </div>
       </div>
 
       <!-- Right Column for Video -->
@@ -104,27 +159,13 @@
         {%- endif -%}
       </div>
     </div>
-
-    {%- if section.settings.button_label != blank -%}
-      <div class="center">
-        <a
-          class="button button--primary"
-          {% if section.settings.button_link == blank %}
-            role="link" aria-disabled="true"
-          {% else %}
-            href="{{ section.settings.button_link }}"
-          {% endif %}
-        >
-          {{ section.settings.button_label | escape }}
-        </a>
-      </div>
-    {%- endif -%}
   </div>
 </div>
 
 {% schema %}
 {
-  "name": "List & Videon",
+  "name": "List & Video with Columns",
+  "max_blocks": 6,
   "settings": [
     {
       "type": "inline_richtext",
@@ -143,17 +184,6 @@
       "id": "product_description_video",
       "label": "YouTube Video URL",
       "default": "https://www.youtube.com/watch?v=example"
-    },
-    {
-      "type": "text",
-      "id": "button_label",
-      "label": "Button Label",
-      "default": "Learn More"
-    },
-    {
-      "type": "url",
-      "id": "button_link",
-      "label": "Button Link"
     },
     {
       "type": "range",
@@ -182,9 +212,46 @@
       "default": "scheme-1"
     }
   ],
+  "blocks": [
+    {
+      "type": "column",
+      "name": "Column",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "inline_richtext",
+          "id": "title",
+          "default": "Column Title",
+          "label": "Title"
+        },
+        {
+          "type": "text",
+          "id": "link_label",
+          "label": "Link Label"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "Link"
+        }
+      ]
+    }
+  ],
   "presets": [
     {
-      "name": "List & Video"
+      "name": "List & Video with Columns",
+      "blocks": [
+        {
+          "type": "column"
+        },
+        {
+          "type": "column"
+        }
+      ]
     }
   ]
 }
