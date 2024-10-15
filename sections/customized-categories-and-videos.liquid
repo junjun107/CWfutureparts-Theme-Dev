@@ -1,0 +1,191 @@
+{{ 'section-multicolumn.css' | asset_url | stylesheet_tag }}
+{{ 'component-slider.css' | asset_url | stylesheet_tag }}
+
+{%- style -%}
+  .multicolumn {
+    border: 5px solid green;
+  }
+
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+
+  .page-width {
+    max-width: 100%; /* Change max-width to 100% or any value you prefer */
+    padding: 0 20px; /* Adjust padding to give breathing space */
+  }
+
+  .section-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%; /* Set to full width */
+    border: 5px dotted red;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-container {
+      flex-direction: row;
+      justify-content: space-between;
+      width: 100%; /* Ensure it takes up the full width */
+    }
+  }
+
+  .left-column {
+    flex: 1;
+    padding-right: 20px;
+  }
+
+  .right-column {
+    flex: 1;
+  }
+
+  .multicolumn-card__video-wrapper {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+  }
+
+  .multicolumn-card__video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
+{%- endstyle -%}
+
+<div class="multicolumn color-{{ section.settings.color_scheme }} gradient{% unless section.settings.background_style == 'none' %} background-{{ section.settings.background_style }}{% endunless %}">
+  <div class="page-width section-{{ section.id }}-padding isolate">
+    {%- unless section.settings.title == blank -%}
+      <div class="title-wrapper-with-link title-wrapper--self-padded-mobile title-wrapper--no-top-margin multicolumn__title">
+        <h2 class="title inline-richtext {{ section.settings.heading_size }}">
+          {{ section.settings.title }}
+        </h2>
+      </div>
+    {%- endunless -%}
+
+    <div class="section-container">
+      <!-- Left Column for Content -->
+      <div class="left-column">
+        <h3>{{ section.settings.left_column_title }}</h3>
+        <ul>
+          {%- for collection in collections -%}
+            <li>{{ collection.title }}</li>
+          {%- endfor -%}
+        </ul>
+      </div>
+
+      <!-- Right Column for Video -->
+      <div class="right-column">
+        {%- if section.settings.product_description_video contains 'youtube'
+          or section.settings.product_description_video contains 'youtu.be'
+        -%}
+          {%- assign video_id = section.settings.product_description_video | split: 'v=' | last | split: '&' | first -%}
+          <div class="multicolumn-card__video-wrapper">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/{{ video_id }}?rel=0"
+              frameborder="0"
+              allowfullscreen
+            ></iframe>
+          </div>
+        {%- endif -%}
+      </div>
+    </div>
+
+    {%- if section.settings.button_label != blank -%}
+      <div class="center">
+        <a
+          class="button button--primary"
+          {% if section.settings.button_link == blank %}
+            role="link" aria-disabled="true"
+          {% else %}
+            href="{{ section.settings.button_link }}"
+          {% endif %}
+        >
+          {{ section.settings.button_label | escape }}
+        </a>
+      </div>
+    {%- endif -%}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "List & Videon",
+  "settings": [
+    {
+      "type": "inline_richtext",
+      "id": "title",
+      "default": "Enter your section title here",
+      "label": "Section Title"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "left_column_title",
+      "default": "Categories",
+      "label": "Left Column Title"
+    },
+    {
+      "type": "text",
+      "id": "product_description_video",
+      "label": "YouTube Video URL",
+      "default": "https://www.youtube.com/watch?v=example"
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "label": "Button Label",
+      "default": "Learn More"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button Link"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Padding Top",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Padding Bottom",
+      "default": 36
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "Color Scheme",
+      "default": "scheme-1"
+    }
+  ],
+  "presets": [
+    {
+      "name": "List & Video"
+    }
+  ]
+}
+{% endschema %}
