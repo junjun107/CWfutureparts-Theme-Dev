@@ -89,8 +89,161 @@
         "accessibility_info": "Slideshow about our brand"
       }
     },
+    "customized_categories_and_videos_Lqn9Qf": {
+      "type": "customized-categories-and-videos",
+      "blocks": {
+        "column_WzYpd8": {
+          "type": "column",
+          "settings": {
+            "title": "Column Title",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_XizJwz": {
+          "type": "column",
+          "settings": {
+            "title": "Column Title",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_bk9K4E": {
+          "type": "column",
+          "settings": {
+            "title": "Column Title",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_RHAiJC": {
+          "type": "column",
+          "settings": {
+            "title": "Column Title",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_RQH99z": {
+          "type": "column",
+          "settings": {
+            "title": "Column Title",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_XErixh": {
+          "type": "column",
+          "settings": {
+            "title": "Column Title",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_WzYpd8",
+        "column_XizJwz",
+        "column_bk9K4E",
+        "column_RHAiJC",
+        "column_RQH99z",
+        "column_XErixh"
+      ],
+      "settings": {
+        "title": "",
+        "left_column_title": "Categories",
+        "product_description_video": "https:\/\/www.youtube.com\/watch?v=example",
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "color_scheme": ""
+      }
+    },
+    "customized_category_multicolumn_9RRnHy": {
+      "type": "customized-category-multicolumn",
+      "blocks": {
+        "column_Yjzrbr": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_E74Ly7": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_cUymEB": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_nqgMQb": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_AT7GNW": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_WbGdni": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_Yjzrbr",
+        "column_E74Ly7",
+        "column_cUymEB",
+        "column_nqgMQb",
+        "column_AT7GNW",
+        "column_WbGdni"
+      ],
+      "settings": {
+        "title": "Industries We Serve",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "Button label",
+        "button_link": "",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 40,
+        "padding_bottom": 36
+      }
+    },
     "featured_collection": {
       "type": "featured-collection",
+      "disabled": true,
       "settings": {
         "title": "Featured products",
         "heading_size": "h2",
@@ -116,10 +269,66 @@
         "padding_top": 44,
         "padding_bottom": 36
       }
+    },
+    "multicolumn_EfW3qb": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_BYM3Lt": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_FxErHb": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_f9pEFW": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_BYM3Lt",
+        "column_FxErHb",
+        "column_f9pEFW"
+      ],
+      "settings": {
+        "title": "What are customers say about our products",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "Button label",
+        "button_link": "",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
     "slideshow_dzrXKB",
-    "featured_collection"
+    "customized_categories_and_videos_Lqn9Qf",
+    "customized_category_multicolumn_9RRnHy",
+    "featured_collection",
+    "multicolumn_EfW3qb"
   ]
 }
