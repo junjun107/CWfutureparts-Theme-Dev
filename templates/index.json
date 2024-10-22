@@ -128,7 +128,7 @@
           "type": "column",
           "settings": {
             "title": "POPULAR CASTERES",
-            "link_label": "",
+            "link_label": "Explore our most popular solutions",
             "link": "shopify://collections/popular-casters"
           }
         },
