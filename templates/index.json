@@ -144,7 +144,7 @@
           "type": "column",
           "settings": {
             "title": "HIGH TEMP CASTERS",
-            "link_label": "",
+            "link_label": "Heat resistant -40° F to +475° F",
             "link": "shopify://collections/high-temperature-casters"
           }
         },
