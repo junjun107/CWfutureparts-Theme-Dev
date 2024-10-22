@@ -32,9 +32,9 @@
         },
         "slide_wLMqbW": {
           "type": "slide",
-          "disabled": true,
           "settings": {
-            "heading": "主图HU 主打人体工学脚轮",
+            "image": "shopify://shop_images/SP_banner.jpg",
+            "heading": "",
             "heading_size": "h1",
             "subheading": "",
             "button_label": "",
