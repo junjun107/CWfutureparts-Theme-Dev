@@ -25,13 +25,14 @@
                 </span>
                 {{- 'icon-caret.svg' | inline_asset_content -}}
               </summary>
-
               <div
                 id="MegaMenu-Content-{{ forloop.index }}"
                 class="mega-menu__content color-{{ section.settings.menu_color_scheme }} gradient motion-reduce global-settings-popup"
                 tabindex="-1"
               >
-                <!-- check to see if menue is a mega menu and check if menu image is turned on -->
+                <!--
+                  check to see if menue is a mega menu and check if menu image setting is turned on based on megamenu-image-custom.liquid created
+                -->
                 {% if section.settings.menu_type_desktop == 'mega'
                   and section.settings.mega_menu_images_toggle != 'none'
                 %}

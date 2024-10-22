@@ -47,11 +47,15 @@
   }
 
   .block-item {
-    /* border: 2px solid blue; */
+    border: 2px solid blue;
     display: flex;
     align-items: center; /* Align items vertically */
     flex: 1 1 calc(50% - 20px); /* Two columns on desktop */
     box-sizing: border-box; /* Include padding in width */
+  }
+  a {
+    text-decoration:none;
+    color: inherit;
   }
 
   .multicolumn-card__image-wrapper {
@@ -111,32 +115,41 @@
         <h3>{{ section.settings.left_column_title }}</h3>
         <div class="block-container">
           {%- for block in section.blocks -%}
-            <div class="block-item">
-              <!-- Display the image if available -->
-              {%- if block.settings.image != blank -%}
-                <div class="multicolumn-card__image-wrapper">
-                  <div class="media" style="width: 100px; height: 100px;">
-                    {{
-                      block.settings.image
-                      | image_url: width: 100, height: 100
-                      | image_tag: width: 100, height: 100, class: 'multicolumn-card__image'
-                    }}
-                  </div>
+            {%- if block.settings.link != blank -%}
+              <a href="{{ block.settings.link }}" class="block-item">
+            {%- else -%}
+              <div class="block-item">
+            {%- endif -%}
+            <!-- Display the image if available -->
+            {%- if block.settings.image != blank -%}
+              <div class="multicolumn-card__image-wrapper">
+                <div class="media" style="width: 100px; height: 100px;">
+                  {{
+                    block.settings.image
+                    | image_url: width: 100, height: 100
+                    | image_tag: width: 100, height: 100, class: 'multicolumn-card__image'
+                  }}
                 </div>
+              </div>
+            {%- endif -%}
+
+            <!-- Display the title of each block -->
+            <div>
+              {%- if block.settings.title != blank -%}
+                <h3 class="inline-richtext">{{ block.settings.title }}</h3>
               {%- endif -%}
 
-              <!-- Display the title of each block -->
-              <div>
-                {%- if block.settings.title != blank -%}
-                  <h3 class="inline-richtext">{{ block.settings.title }}</h3>
-                {%- endif -%}
-
-                <!-- Display the link if available -->
-                {%- if block.settings.link_label != blank and block.settings.link != blank -%}
-                  <a href="{{ block.settings.link }}">{{ block.settings.link_label }}</a>
-                {%- endif -%}
-              </div>
+              <!-- Display the link label if available -->
+              {%- if block.settings.link_label != blank and block.settings.link != blank -%}
+                <span>{{ block.settings.link_label }}</span>
+              {%- endif -%}
             </div>
+
+            {%- if block.settings.link == blank -%}
+              </div>
+            {%- else -%}
+              </a>
+            {%- endif -%}
           {%- endfor -%}
         </div>
       </div>
