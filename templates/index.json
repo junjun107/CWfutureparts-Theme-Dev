@@ -30,17 +30,36 @@
             "text_alignment_mobile": "center"
           }
         },
-        "slide_LbTnxf": {
+        "slide_wLMqbW": {
           "type": "slide",
+          "disabled": true,
           "settings": {
-            "heading": "主图PCI STL PCC 主打常规",
+            "heading": "主图HU 主打人体工学脚轮",
             "heading_size": "h1",
-            "subheading": "Tell your brand's story through images",
-            "button_label": "Button label",
+            "subheading": "",
+            "button_label": "",
             "link": "",
             "button_style_secondary": false,
             "box_align": "middle-center",
             "show_text_box": true,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-1",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "slide_LbTnxf": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/PCI_banner.jpg",
+            "heading": "Polyurethane Wheel on Steel Hub",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "top-center",
+            "show_text_box": false,
             "text_alignment": "center",
             "image_overlay_opacity": 0,
             "color_scheme": "",
@@ -50,14 +69,15 @@
         "slide_dUQN8w": {
           "type": "slide",
           "settings": {
-            "heading": "静音脚轮 MIR PRX PRO MRC",
+            "image": "shopify://shop_images/MIR_banner.jpg",
+            "heading": "",
             "heading_size": "h1",
-            "subheading": "Tell your brand's story through images",
-            "button_label": "Button label",
+            "subheading": "",
+            "button_label": "",
             "link": "",
             "button_style_secondary": false,
             "box_align": "middle-center",
-            "show_text_box": true,
+            "show_text_box": false,
             "text_alignment": "center",
             "image_overlay_opacity": 0,
             "color_scheme": "",
@@ -84,6 +104,7 @@
       },
       "block_order": [
         "slide_tgNPwy",
+        "slide_wLMqbW",
         "slide_LbTnxf",
         "slide_dUQN8w",
         "slide_HCGLgY"
