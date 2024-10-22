@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "name": "t:sections.header.name",
   "type": "header",
@@ -29,9 +38,18 @@
     "header": {
       "type": "header",
       "settings": {
+        "menu_type_desktop": "dropdown",
+        "mega_menu_images_toggle": "metafield",
+        "mega_menu_images_title": false,
+        "megamenu_backdrop_toggle": true,
+        "dropdown_menu_images_toggle": "none",
+        "menu_dropdown_width": 25,
+        "drawer_menu_images_toggle": "none",
+        "menu_images_size": 60,
+        "menu_images_border_toggle": false,
+        "menu_images_border_color": "#eaeaea",
         "logo_position": "middle-left",
         "menu": "main-menu",
-        "menu_type_desktop": "dropdown",
         "sticky_header_type": "on-scroll-up",
         "show_line_separator": true,
         "color_scheme": "scheme-1",

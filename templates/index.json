@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "slideshow_dzrXKB": {
@@ -6,14 +15,33 @@
         "slide_tgNPwy": {
           "type": "slide",
           "settings": {
-            "heading": "主图的PALC和HU 主打人体工学脚轮",
+            "image": "shopify://shop_images/PALC_banner.jpg",
+            "heading": "",
             "heading_size": "h1",
-            "subheading": "Tell your brand's story through images",
-            "button_label": "Button label",
+            "subheading": "",
+            "button_label": "",
             "link": "",
             "button_style_secondary": false,
             "box_align": "middle-center",
-            "show_text_box": true,
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-1",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "slide_wLMqbW": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/SP_banner.jpg",
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": false,
             "text_alignment": "center",
             "image_overlay_opacity": 0,
             "color_scheme": "scheme-1",
@@ -23,14 +51,15 @@
         "slide_LbTnxf": {
           "type": "slide",
           "settings": {
-            "heading": "主图PCI STL PCC 主打常规",
+            "image": "shopify://shop_images/PCI_banner.jpg",
+            "heading": "Polyurethane Wheel on Steel Hub",
             "heading_size": "h1",
-            "subheading": "Tell your brand's story through images",
-            "button_label": "Button label",
+            "subheading": "",
+            "button_label": "",
             "link": "",
             "button_style_secondary": false,
-            "box_align": "middle-center",
-            "show_text_box": true,
+            "box_align": "top-center",
+            "show_text_box": false,
             "text_alignment": "center",
             "image_overlay_opacity": 0,
             "color_scheme": "",
@@ -40,14 +69,15 @@
         "slide_dUQN8w": {
           "type": "slide",
           "settings": {
-            "heading": "静音脚轮 MIR PRX PRO MRC",
+            "image": "shopify://shop_images/MIR_banner.jpg",
+            "heading": "",
             "heading_size": "h1",
-            "subheading": "Tell your brand's story through images",
-            "button_label": "Button label",
+            "subheading": "",
+            "button_label": "",
             "link": "",
             "button_style_secondary": false,
             "box_align": "middle-center",
-            "show_text_box": true,
+            "show_text_box": false,
             "text_alignment": "center",
             "image_overlay_opacity": 0,
             "color_scheme": "",
@@ -57,14 +87,15 @@
         "slide_HCGLgY": {
           "type": "slide",
           "settings": {
-            "heading": "特殊脚轮 PLX FVR PHN",
+            "image": "shopify://shop_images/HIR_banner.jpg",
+            "heading": "",
             "heading_size": "h1",
-            "subheading": "Tell your brand's story through images",
-            "button_label": "Button label",
+            "subheading": "",
+            "button_label": "",
             "link": "",
             "button_style_secondary": false,
             "box_align": "middle-center",
-            "show_text_box": true,
+            "show_text_box": false,
             "text_alignment": "center",
             "image_overlay_opacity": 0,
             "color_scheme": "scheme-1",
@@ -74,13 +105,14 @@
       },
       "block_order": [
         "slide_tgNPwy",
+        "slide_wLMqbW",
         "slide_LbTnxf",
         "slide_dUQN8w",
         "slide_HCGLgY"
       ],
       "settings": {
         "layout": "full_bleed",
-        "slide_height": "medium",
+        "slide_height": "large",
         "slider_visual": "counter",
         "auto_rotate": false,
         "change_slides_speed": 5,
@@ -95,49 +127,49 @@
         "column_WzYpd8": {
           "type": "column",
           "settings": {
-            "title": "Column Title",
-            "link_label": "",
-            "link": ""
+            "title": "POPULAR CASTERES",
+            "link_label": "Explore our most popular solutions",
+            "link": "shopify://collections/popular-casters"
           }
         },
         "column_XizJwz": {
           "type": "column",
           "settings": {
-            "title": "Column Title",
-            "link_label": "",
-            "link": ""
+            "title": "STAINLESS STEEL",
+            "link_label": "Prevent rust, increase life",
+            "link": "shopify://collections/stainless-steel-casters"
           }
         },
         "column_bk9K4E": {
           "type": "column",
           "settings": {
-            "title": "Column Title",
-            "link_label": "",
-            "link": ""
+            "title": "HIGH TEMP CASTERS",
+            "link_label": "Heat resistant -40° F to +475° F",
+            "link": "shopify://collections/high-temperature-casters"
           }
         },
         "column_RHAiJC": {
           "type": "column",
           "settings": {
-            "title": "Column Title",
-            "link_label": "",
-            "link": ""
+            "title": "NOISE-REDUCING CASTERS",
+            "link_label": "Sound Absorption",
+            "link": "shopify://collections/noise-reducing-casters"
           }
         },
         "column_RQH99z": {
           "type": "column",
           "settings": {
-            "title": "Column Title",
-            "link_label": "",
-            "link": ""
+            "title": "Ergonomic Casters",
+            "link_label": "Enhancing safety and productivity",
+            "link": "shopify://collections/ergonomic-casters"
           }
         },
         "column_XErixh": {
           "type": "column",
           "settings": {
-            "title": "Column Title",
-            "link_label": "",
-            "link": ""
+            "title": "KINGPINLESS CASTERS",
+            "link_label": "Shock and impact resistant",
+            "link": "shopify://collections/kingpinless-casters"
           }
         }
       },
@@ -151,8 +183,8 @@
       ],
       "settings": {
         "title": "",
-        "left_column_title": "Categories",
-        "product_description_video": "https:\/\/www.youtube.com\/watch?v=example",
+        "left_column_title": "POPULAR CATEGORIES",
+        "product_description_video": "https://www.youtube.com/watch?v=example",
         "padding_top": 36,
         "padding_bottom": 36,
         "color_scheme": ""
@@ -165,7 +197,7 @@
           "type": "column",
           "settings": {
             "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
             "link_label": "",
             "link": ""
           }
@@ -174,7 +206,7 @@
           "type": "column",
           "settings": {
             "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
             "link_label": "",
             "link": ""
           }
@@ -183,7 +215,7 @@
           "type": "column",
           "settings": {
             "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
             "link_label": "",
             "link": ""
           }
@@ -192,7 +224,7 @@
           "type": "column",
           "settings": {
             "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
             "link_label": "",
             "link": ""
           }
@@ -201,7 +233,7 @@
           "type": "column",
           "settings": {
             "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
             "link_label": "",
             "link": ""
           }
@@ -210,7 +242,7 @@
           "type": "column",
           "settings": {
             "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
             "link_label": "",
             "link": ""
           }
@@ -277,7 +309,7 @@
           "type": "column",
           "settings": {
             "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
             "link_label": "",
             "link": ""
           }
@@ -286,7 +318,7 @@
           "type": "column",
           "settings": {
             "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
             "link_label": "",
             "link": ""
           }
@@ -295,7 +327,7 @@
           "type": "column",
           "settings": {
             "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
             "link_label": "",
             "link": ""
           }
