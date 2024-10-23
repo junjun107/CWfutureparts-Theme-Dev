@@ -196,7 +196,6 @@
         "column_Yjzrbr": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/plane-svgrepo-com.svg",
             "title": "Aerospace & Defense",
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
             "link_label": "",
@@ -206,7 +205,6 @@
         "column_E74Ly7": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/car-svgrepo-com.svg",
             "title": "Automotive & Ergonomic",
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
             "link_label": "",
