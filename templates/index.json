@@ -324,6 +324,53 @@
         "padding_bottom": 36
       }
     },
+    "image_with_text_Vxkkqa": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_bECmtx": {
+          "type": "heading",
+          "settings": {
+            "heading": "Rolling Forward, Built to Last",
+            "heading_size": "h1"
+          }
+        },
+        "text_MaPMYH": {
+          "type": "text",
+          "settings": {
+            "text": "<p>CWfutureparts heavy-duty industrial casters are designed to endure the toughest and most demanding environments. From grease to wet floors, debris to harsh sunlight, our casters can handle it all</p>",
+            "text_style": "body"
+          }
+        },
+        "button_i9xV39": {
+          "type": "button",
+          "settings": {
+            "button_label": "See More",
+            "button_link": "shopify://collections",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_bECmtx",
+        "text_MaPMYH",
+        "button_i9xV39"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/6abba72f-b5cd-42cb-bac0-5136a6b5a8bb._SL850_FMjpg.jpg",
+        "height": "small",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "multicolumn_EfW3qb": {
       "type": "multicolumn",
       "blocks": {
@@ -383,6 +430,7 @@
     "customized_categories_and_videos_Lqn9Qf",
     "customized_category_multicolumn_9RRnHy",
     "featured_collection",
+    "image_with_text_Vxkkqa",
     "multicolumn_EfW3qb"
   ]
 }
