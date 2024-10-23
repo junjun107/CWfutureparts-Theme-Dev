@@ -196,6 +196,7 @@
         "column_Yjzrbr": {
           "type": "column",
           "settings": {
+            "image": "shopify://shop_images/air_cargo.jpg",
             "title": "Aerospace & Defense",
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
             "link_label": "",
@@ -205,6 +206,7 @@
         "column_E74Ly7": {
           "type": "column",
           "settings": {
+            "image": "shopify://shop_images/auto.jpg",
             "title": "Automotive & Ergonomic",
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
             "link_label": "",
@@ -214,6 +216,7 @@
         "column_cUymEB": {
           "type": "column",
           "settings": {
+            "image": "shopify://shop_images/Bakery.png",
             "title": "Bakery Hi-Temp",
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
             "link_label": "",
@@ -223,6 +226,7 @@
         "column_nqgMQb": {
           "type": "column",
           "settings": {
+            "image": "shopify://shop_images/Caster-PLX-6740-1B-5.jpg",
             "title": "Food Processing",
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
             "link_label": "",
@@ -232,6 +236,7 @@
         "column_AT7GNW": {
           "type": "column",
           "settings": {
+            "image": "shopify://shop_images/furniture.jpg",
             "title": "Furniture",
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
             "link_label": "",
@@ -241,6 +246,7 @@
         "column_WbGdni": {
           "type": "column",
           "settings": {
+            "image": "shopify://shop_images/istockphoto_104645550.jpg",
             "title": "Distribution",
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
             "link_label": "",
@@ -250,6 +256,7 @@
         "column_VQnmYW": {
           "type": "column",
           "settings": {
+            "image": "shopify://shop_images/retail_casters.jpg",
             "title": "Retail",
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
             "link_label": "",
@@ -259,6 +266,7 @@
         "column_JVFCWm": {
           "type": "column",
           "settings": {
+            "image": "shopify://shop_images/medical-carts-for-sale-San-Diego-CA.webp",
             "title": "Medical",
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
             "link_label": "",
