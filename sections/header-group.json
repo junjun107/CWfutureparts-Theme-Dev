@@ -40,7 +40,7 @@
       "settings": {
         "menu_type_desktop": "mega",
         "mega_menu_images_toggle": "metafield",
-        "mega_menu_images_title": false,
+        "mega_menu_images_title": true,
         "megamenu_backdrop_toggle": true,
         "dropdown_menu_images_toggle": "none",
         "menu_dropdown_width": 25,
