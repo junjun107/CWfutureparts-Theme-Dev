@@ -4,17 +4,17 @@
 
     {% if menu_images_toggle == 'featured' %}
       {% if childlink.object.featured_image %}
-        {% assign image_url = childlink.object.featured_image | image_url: 'master' %}
+        {% assign image_url = childlink.object.featured_image | img_url: 'master' %}
       {% endif %}
     {% elsif menu_images_toggle == 'metafield' %}
-      {% assign image_url = childlink.object.metafields.custom.header_menu_image | image_url: 'master' %}
+      {% assign image_url = childlink.object.metafields.custom.header_menu_image | img_url: 'master' %}
     {% endif %}
 
     <li>
       <div class="mega-menu__column">
         {% if image_url != blank %}
           <a href="{{ childlink.url }}">
-            <img src="https://m.media-amazon.com/images/I/71HXko2JG9L._SX522_.jpg" alt="{{ childlink.title | escape }}" class="mega-menu__image">
+            <img src="{{ image_url }}" alt="{{ childlink.title | escape }}" class="mega-menu__image">
           </a>
         {% endif %}
         <a
