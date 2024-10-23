@@ -216,19 +216,19 @@
         "column_cUymEB": {
           "type": "column",
           "settings": {
-            "title": "Column",
+            "title": "Bakery Hi-Temp",
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
             "link_label": "",
-            "link": ""
+            "link": "shopify://collections/high-temperature-casters"
           }
         },
         "column_nqgMQb": {
           "type": "column",
           "settings": {
-            "title": "Column",
+            "title": "Food Processing",
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
             "link_label": "",
-            "link": ""
+            "link": "shopify://collections/stainless-steel-casters"
           }
         },
         "column_AT7GNW": {
