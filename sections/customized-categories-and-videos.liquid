@@ -2,102 +2,108 @@
 {{ 'component-slider.css' | asset_url | stylesheet_tag }}
 
 {%- style -%}
-    .section-{{ section.id }}
-    -padding {
-      padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
-      padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
-    }
+      .section-{{ section.id }}
+      -padding {
+        padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+        padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+      }
 
-    @media screen and (min-width: 750px) {
-      .section-{{ section.id }}-padding {
-        padding-top: {{ section.settings.padding_top }}px;
-        padding-bottom: {{ section.settings.padding_bottom }}px;
+      @media screen and (min-width: 750px) {
+        .section-{{ section.id }}-padding {
+          padding-top: {{ section.settings.padding_top }}px;
+          padding-bottom: {{ section.settings.padding_bottom }}px;
+        }
+      }
+      @media (max-width: 768px) {
+      .block-item {
+        flex-direction: column; /* Stack items on mobile */
+        align-items: flex-start; /* Align items to the start */
+        flex: 1 1 100%; /* Full width on mobile */
+      }
+
+      .multicolumn-card__image-wrapper {
+        margin-right: 0;
+        margin-bottom: 10px;
       }
     }
-    @media (max-width: 768px) {
+      .page-width {
+        max-width: 80%;
+        padding: 20px 20px;
+      }
+
+      .section-container {
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+
+      }
+      .block-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+
+      }
+    .block-container h3 {
+      margin-bottom: 5px;
+    }
     .block-item {
-      flex-direction: column; /* Stack items on mobile */
-      align-items: flex-start; /* Align items to the start */
-      flex: 1 1 100%; /* Full width on mobile */
+      display: flex;
+      align-items: center; /* Align items vertically */
+      flex: 1 1 calc(50% - 20px); /* Two columns on desktop */
+      box-sizing: border-box; /* Include padding in width */
+      background: #fcfcfc;
+    }
+    a {
+      text-decoration:none;
+      color: inherit;
     }
 
     .multicolumn-card__image-wrapper {
-      margin-right: 0; /* Remove margin on mobile */
-      margin-bottom: 10px; /* Add space below image */
+      margin-right: 10px; /* Space between image and text */
     }
-  }
-    .page-width {
-      max-width: 80%;
-      /* Change max-width to 100% or any value you prefer */
-      padding: 0 20px;
-      /* Adjust padding to give breathing space */
-    }
-
-    .section-container {
-      display: flex;
-      flex-direction: column;
-      max-width: 100%;
-      /* Set to full width */
-      /* border: 5px dotted red; */
-    }
-    .block-container {
-    display: flex;
-    flex-wrap: wrap; /* Allow wrapping for responsive layout */
-    gap: 20px; /* Space between items */
+  .span-linktext{
+    color: gray;
+    font-size: 14px;
   }
 
-  .block-item {
-    border: 2px solid blue;
-    display: flex;
-    align-items: center; /* Align items vertically */
-    flex: 1 1 calc(50% - 20px); /* Two columns on desktop */
-    box-sizing: border-box; /* Include padding in width */
-  }
-  a {
-    text-decoration:none;
-    color: inherit;
-  }
-
-  .multicolumn-card__image-wrapper {
-    margin-right: 10px; /* Space between image and text */
-  }
-
-
-    @media screen and (min-width: 750px) {
-      .section-container {
-        flex-direction: row;
-        justify-content: space-between;
-        width: 100%;
-        /* Ensure it takes up the full width */
+      @media screen and (min-width: 750px) {
+        .section-container {
+          flex-direction: row;
+          justify-content: space-between;
+          width: 100%;
+          /* Ensure it takes up the full width */
+        }
       }
-    }
 
-    .left-column {
-      flex: 1;
-      padding-right: 20px;
-    }
+      .left-column {
+        flex: 1;
+        padding-right: 20px;
+        border: 3px solid green;
+      }
 
-    .right-column {
-      flex: 1;
-    }
+      .right-column {
+        flex: 1;
+        border: 3px solid green;
 
-    .multicolumn-card__video-wrapper {
-      position: relative;
-      width: 100%;
-      padding-bottom: 56.25%;
-      /* 16:9 aspect ratio */
-      height: 0;
-      overflow: hidden;
-    }
+      }
 
-    .multicolumn-card__video-wrapper iframe {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      border: 0;
-    }
+      .multicolumn-card__video-wrapper {
+        position: relative;
+        width: 100%;
+        padding-bottom: 56.25%;
+        /* 16:9 aspect ratio */
+        height: 0;
+        overflow: hidden;
+      }
+
+      .multicolumn-card__video-wrapper iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: 0;
+      }
 {%- endstyle -%}
 
 <div class="multicolumn color-{{ section.settings.color_scheme }} gradient{% unless section.settings.background_style == 'none' %} background-{{ section.settings.background_style }}{% endunless %}">
@@ -141,7 +147,7 @@
 
               <!-- Display the link label if available -->
               {%- if block.settings.link_label != blank and block.settings.link != blank -%}
-                <span>{{ block.settings.link_label }}</span>
+                <span class="span-linktext">{{ block.settings.link_label }}</span>
               {%- endif -%}
             </div>
 
