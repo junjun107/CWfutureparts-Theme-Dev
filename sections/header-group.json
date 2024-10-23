@@ -39,7 +39,7 @@
       "type": "header",
       "settings": {
         "menu_type_desktop": "mega",
-        "mega_menu_images_toggle": "featured",
+        "mega_menu_images_toggle": "metafield",
         "mega_menu_images_title": false,
         "megamenu_backdrop_toggle": true,
         "dropdown_menu_images_toggle": "none",
