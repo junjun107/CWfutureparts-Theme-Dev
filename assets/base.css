@@ -2798,7 +2798,7 @@ details[open] > .header__submenu {
     font-size: 20px !important;
 }
 
-.header__menu-item:hover {
+.header__menu-item:hover span{
   color: #ffa500 !important;
 }
 
