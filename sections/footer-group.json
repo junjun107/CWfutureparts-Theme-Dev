@@ -14,6 +14,12 @@
     "footer": {
       "type": "footer",
       "blocks": {
+        "brand_information_cp8Qme": {
+          "type": "brand_information",
+          "settings": {
+            "show_social": true
+          }
+        },
         "link_list_izbjCx": {
           "type": "link_list",
           "settings": {
@@ -21,16 +27,18 @@
             "menu": "footer"
           }
         },
-        "brand_information_cp8Qme": {
-          "type": "brand_information",
+        "text_kBdT4T": {
+          "type": "text",
           "settings": {
-            "show_social": true
+            "heading": "Contact Us",
+            "subtext": ""
           }
         }
       },
       "block_order": [
+        "brand_information_cp8Qme",
         "link_list_izbjCx",
-        "brand_information_cp8Qme"
+        "text_kBdT4T"
       ],
       "settings": {
         "color_scheme": "scheme-1",
