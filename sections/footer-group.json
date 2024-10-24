@@ -20,10 +20,17 @@
             "heading": "Top links",
             "menu": "footer"
           }
+        },
+        "brand_information_cp8Qme": {
+          "type": "brand_information",
+          "settings": {
+            "show_social": true
+          }
         }
       },
       "block_order": [
-        "link_list_izbjCx"
+        "link_list_izbjCx",
+        "brand_information_cp8Qme"
       ],
       "settings": {
         "color_scheme": "scheme-1",
