@@ -204,6 +204,24 @@ class="header header--{{ section.settings.logo_position }} header--mobile-{{ sec
     {%- endif -%}
 
     <div class="header__icons{% if section.settings.enable_country_selector or section.settings.enable_language_selector %} header__icons--localization header-localization{% endif %}">
+ <!-- New Contact Info Section -->
+        <div class="contact_info" style="text-align: left; margin-right: 20px;">
+          <div>
+            Call us:
+              <a href="tel: 1(800)980-8688" style="text-decoration: none; color: black">
+              <i class="fas fa-phone"></i> 1(800)980-8688
+              </a>
+          </div>
+          
+          <div>
+            Email:
+              <a href="mailto:foreverswivelservice@gmail.com" style="text-decoration: none; color: black">
+              <i class="fas fa-envelope"></i>foreverswivelservice@gmail.com
+              </a>
+          </div>
+        </div>
+
+      
       <div class="desktop-localization-wrapper">
         {%- if section.settings.enable_country_selector and localization.available_countries.size > 1 -%}
           <localization-form class="small-hide medium-hide" data-prevent-hide>
