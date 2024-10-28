@@ -165,7 +165,10 @@
         {%- if section.settings.product_description_video contains 'youtube'
           or section.settings.product_description_video contains 'youtu.be'
         -%}
-          {%- assign video_id = section.settings.product_description_video | split: 'v=' | last | split: '&' | first -%}
+          {%- assign video_id = section.settings.product_description_video | 
+    replace: "https://youtu.be/", "" | 
+    split: 'v=' | last | 
+    split: '&' | first -%}
           <div class="multicolumn-card__video-wrapper">
             <iframe
               width="560"
