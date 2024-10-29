@@ -118,6 +118,11 @@
       padding-bottom: {{ section.settings.padding_bottom }}px;
     }
   }
+  @media screen and (max-width: 750px) {
+  .header__heading-logo-wrapper {
+    display: none;
+  }
+}
 {%- endstyle -%}
 
 <script src="{{ 'cart-notification.js' | asset_url }}" defer="defer"></script>
