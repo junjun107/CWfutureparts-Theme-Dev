@@ -63,7 +63,30 @@
     padding-top: 1rem;
     line-height: calc(1 + 0.8 / var(--font-body-scale));
   }
+  .contact_info .contact-item {
+    display: flex;
+      align-items: center;
+		  margin-bottom: 5px;    
+  }
 
+  @media screen and (max-width: 750px) { 
+    .contact_info {
+	    display: block;
+	    align-items: center;
+	    font-size: 10px;
+	    max-width: 100%;
+	    padding: 0; 
+	  }
+
+	  .contact_info .contact-item {
+	    display: flex;
+	    align-items: center;
+	    gap: 5px; 
+	    white-space: nowrap; 
+	    overflow: hidden;
+	    text-overflow: ellipsis; 
+	  }
+  }
   @media screen and (min-width: 750px) {
     .list-menu__item--link {
       padding-bottom: 0.5rem;
@@ -205,21 +228,18 @@ class="header header--{{ section.settings.logo_position }} header--mobile-{{ sec
 
     <div class="header__icons{% if section.settings.enable_country_selector or section.settings.enable_language_selector %} header__icons--localization header-localization{% endif %}">
  <!-- New Contact Info Section -->
-        <div class="contact_info" style="text-align: left; margin-right: 20px;">
-          <div>
-            Call us:
-              <a href="tel: 1(626)400-5808" style="text-decoration: none; color: black">
-              <i class="fas fa-phone"></i> 1(626)400-5808
-              </a>
-          </div>
-          
-          <div>
-            Email:
-              <a href="mailto:cwfutureparts@gmail.com" style="text-decoration: none; color: black">
-              <i class="fas fa-envelope"></i>cwfutureparts@gmail.com
-              </a>
-          </div>
-        </div>
+    <div class="contact_info" style="text-align: left; margin-right: 20px;">
+  <span class="contact-item">
+    <a href="tel:(626)400-5802" style="text-decoration: none; color: black;">
+      <i class="fas fa-phone"></i> (626)400-5802
+    </a>
+  </span>
+  <span class="contact-item">
+    <a href="mailto:handsammuservice@gmail.com" style="text-decoration: none; color: black;">
+      <i class="fas fa-envelope"></i> handsammuservice@gmail.com
+    </a>
+  </span>
+</div>
 
       
       <div class="desktop-localization-wrapper">
