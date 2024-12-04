@@ -18,7 +18,7 @@
           "type": "announcement",
           "settings": {
             "text": "Free Shipping on all orders  🚚🚚",
-            "link": "shopify://collections"
+            "link": "shopify://collections/all-casters"
           }
         }
       },
