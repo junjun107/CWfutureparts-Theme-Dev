@@ -11,9 +11,9 @@
   "current": {
     "logo": "shopify://shop_images/f4e21012-0604-49cd-b7dc-edf3fb19ea38._CR0_0_1500_1500_SX200__1.jpg",
     "logo_width": 120,
-    "type_header_font": "lucida_grande_n4",
+    "type_header_font": "assistant_n4",
     "heading_scale": 100,
-    "type_body_font": "assistant_n4",
+    "type_body_font": "lato_n4",
     "body_scale": 100,
     "page_width": 1200,
     "spacing_sections": 0,
@@ -141,15 +141,12 @@
         }
       }
     },
-    "content_for_index": [
-
-    ],
+    "content_for_index": [],
     "blocks": {
       "4015264832934714879": {
         "type": "shopify://apps/ecomsend-popups/blocks/app/a5670cf8-5705-4b01-ad9e-447033feae26",
         "disabled": false,
-        "settings": {
-        }
+        "settings": {}
       }
     },
     "color_schemes": {
