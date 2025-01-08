@@ -22,8 +22,8 @@
         "item_4GTMpa": {
           "type": "item",
           "settings": {
-            "question": "BREAKS DOWN FOOD",
-            "answer": "<p>Everything we eat is broken down by the digestive enzymes we produce in our salvia, pancreas and stomach, allowing nutrients to be efficiently absorbed into the bloodstream. The 17 digestive enzymes found in DEBLOAT+ are particularly beneficial for people suffering from IBS and other digestive issues. They help to break down specific food groups (e.g. carbs, starches, fats, etc.), supported by a trio of organic ingredients known for their anti-inflammatory properties: cinnamon, turmeric and ginger.</p>"
+            "question": "What are the advantages of Ergonomic Casters?",
+            "answer": "<p>By utilizing ergonomic casters, your company gains multiple advantages, including reduced injuries, increased savings, and enhanced productivity.</p>"
           }
         },
         "item_LqXDAi": {
@@ -31,6 +31,20 @@
           "settings": {
             "question": "REDUCES GAS",
             "answer": "<p>Alpha galactosidase is 1 of the 17 digestive enzymes found in DEBLOAT+. It breaks down the oligosaccharides (a type of carbohydrate) found in beans and cruciferous vegetables such as broccoli and cabbage, known for causing excess gas and bloating. Cinnamon, turmeric and ginger also boast carminative benefits, meaning they break up gas in the gastrointestinal tract and stimulate antral contractions (the contractions which help food pass from one part of the gut to another).</p>"
+          }
+        },
+        "item_dQRFYi": {
+          "type": "item",
+          "settings": {
+            "question": "Question",
+            "answer": "<p>Answer</p>"
+          }
+        },
+        "item_tg9PzE": {
+          "type": "item",
+          "settings": {
+            "question": "Question",
+            "answer": "<p>Answer</p>"
           }
         },
         "item_qWq7mM": {
@@ -44,6 +58,8 @@
       "block_order": [
         "item_4GTMpa",
         "item_LqXDAi",
+        "item_dQRFYi",
+        "item_tg9PzE",
         "item_qWq7mM"
       ],
       "settings": {
