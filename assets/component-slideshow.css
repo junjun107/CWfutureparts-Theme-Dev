@@ -203,7 +203,7 @@ slideshow-component:not(.page-width) .slider-buttons {
 .banner--large:not(.banner--adapt) {
   aspect-ratio: 1024 / 1080; /* Keep the image's original proportions */
   width: 100%; /* Make it responsive */
-  max-height: 80rem; /* Limit the height of the banner */
+  max-height: 90rem; /* Limit the height of the banner */
   overflow: hidden; /* Prevent the content from spilling over */
 }
 
