@@ -3596,3 +3596,6 @@ details-disclosure > details {
     transform: translateX(100%) scaleX(0);
   }
 }
+nav.header__inline-menu, list-menu--inline{
+  font-weight: bolder !important;
+}
