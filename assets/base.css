@@ -3597,5 +3597,5 @@ details-disclosure > details {
   }
 }
 nav.header__inline-menu, list-menu--inline{
-  font-weight: bolder !important;
+  font-weight: bold !important;
 }
