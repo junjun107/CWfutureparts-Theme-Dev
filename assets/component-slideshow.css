@@ -200,6 +200,6 @@ slideshow-component:not(.page-width) .slider-buttons {
   transform: scale(0.8);
 }
 
-.banner--large:not(.banner--adapt){
-  min-height: 92rem;
+.banner--medium:not(.banner--adapt){
+  min-height: 80rem;
 }
