@@ -14,6 +14,30 @@
       display: flex;
       justify-content: center; /* Center the title within its wrapper */
     }
+  .brands-heading {
+  position: relative; /* Ensures pseudo-elements are positioned relative to the h2 */
+  text-align: center; /* Optional: Center aligns the heading text */
+}
+
+.brands-heading::before,
+.brands-heading::after {
+  content: "";
+  width: 180px;
+  height: 15px;
+  display: block;
+  position: absolute;
+  top: 20%; /* Adjust this value as needed for your design */
+  background-color: #000; /* Replace with desired color or style */
+}
+
+.brands-heading::before {
+  left: 0;
+}
+
+.brands-heading::after {
+  right: 0;
+}
+
   @media screen and (min-width: 750px) {
     .section-{{ section.id }}-padding {
       padding-top: {{ section.settings.padding_top }}px;
@@ -38,7 +62,7 @@
   >
     {%- unless section.settings.title == blank -%}
       <div class="title-wrapper-with-link title-wrapper--self-padded-mobile title-wrapper--no-top-margin multicolumn__title">
-        <h2 class="title inline-richtext {{ section.settings.heading_size }}">
+       <h2 class="title inline-richtext {{ section.settings.heading_size }} brands-heading">
           {{ section.settings.title }}
         </h2>
       </div>
