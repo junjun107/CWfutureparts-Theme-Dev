@@ -40,6 +40,13 @@
             "answer": "<ol><li>Improved performance: Regular maintenance ensures smoother movement and load-carrying efficiency.</li><li>Longer lifespan: Maintenance slows down wear and tear, extending the caster’s lifespan.</li><li>Increased safety: Regular checks help identify and fix potential safety hazards.</li><li>Cost-effectiveness: Catching minor issues early on saves you from costly repair jobs down the line.</li></ol>"
           }
         },
+        "item_iiF963": {
+          "type": "item",
+          "settings": {
+            "question": "Benefits Of Choosing American-Made Casters",
+            "answer": "<ol><li>Durability and Longevity:American-made casters stand up to the test of time. They’re built tough, meant to handle heavy loads and constant use without breaking down. </li><li>Superior Quality and Reliability: They go through tough tests to make sure they can handle heavy loads and long hours. This means less worry about breakdowns or replacements for you</li><li>Support Local Economy: When we select Americ.an-made casters, we contribute directly to our local economy by bolstering businesses and employment opportunities in our communities.</li></ol>"
+          }
+        },
         "item_tg9PzE": {
           "type": "item",
           "settings": {
@@ -59,6 +66,7 @@
         "item_4GTMpa",
         "item_LqXDAi",
         "item_dQRFYi",
+        "item_iiF963",
         "item_tg9PzE",
         "item_qWq7mM"
       ],
