@@ -210,5 +210,5 @@ slideshow-component:not(.page-width) .slider-buttons {
 .banner--large:not(.banner--adapt) img {
   width: 100%; /* Scale image to fit the width */
   height: auto; /* Maintain aspect ratio */
-  object-fit: contain; /* Ensure the entire image is shown */
+  object-fit: fill; /* Ensure the entire image is shown */
 }
