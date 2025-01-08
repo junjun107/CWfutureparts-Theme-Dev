@@ -93,7 +93,7 @@
       ],
       "custom_css": [],
       "settings": {
-        "layout": "grid",
+        "layout": "full_bleed",
         "slide_height": "large",
         "slider_visual": "counter",
         "auto_rotate": false,
