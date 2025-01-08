@@ -201,5 +201,6 @@ slideshow-component:not(.page-width) .slider-buttons {
 }
 
 .banner--large:not(.banner--adapt){
-  min-height: 80rem;
+  aspect-ratio: 1024 / 1080; /* Matches your image's ratio */
+  min-height: auto; /* Let aspect ratio control height */
 }
