@@ -50,15 +50,8 @@
         "item_tg9PzE": {
           "type": "item",
           "settings": {
-            "question": "Question",
-            "answer": "<p>Answer</p>"
-          }
-        },
-        "item_qWq7mM": {
-          "type": "item",
-          "settings": {
-            "question": "IMPROVES GUT HEALTH",
-            "answer": "<p>Licorice root has been used for centuries in Ayurvedic medicine, where it is believed to pacify “altered pitta”, reduce heartburn and heal ulcers. In clinical trials, 51% of people reported a reduction in bloating, nausea, gas and abdominal fullness within 30 days of taking our key ingredient daily.</p>"
+            "question": "Is Bigger Always Better? Why Caster Wheels Size Matters",
+            "answer": "<ol><li>The Weight of Your Equipment: All wheels are rated by their load capacity, so you’ll want to make sure that the caster wheels you select can safely support the weight of your equipment.</li><li>Your Equipment Dimensions:When choosing wheel size, it’s also important to consider the width of the item being transported. The width of the item will dictate how big the wheels need to be in order to safely and effectively move the item.</li><li>The Type of Terrain Your Equipment Will be Used On: If you’ll be using your equipment on rough terrain, you’ll want to choose wheels with a high load capacity and large diameter. On the other hand, if you’ll be using your equipment on smooth surfaces, you can choose caster wheels with a lower load capacity and smaller diameter.<br/></li></ol>"
           }
         }
       },
@@ -67,8 +60,7 @@
         "item_LqXDAi",
         "item_dQRFYi",
         "item_iiF963",
-        "item_tg9PzE",
-        "item_qWq7mM"
+        "item_tg9PzE"
       ],
       "settings": {
         "layout_gap": 0,
