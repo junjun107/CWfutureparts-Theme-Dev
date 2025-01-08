@@ -200,7 +200,15 @@ slideshow-component:not(.page-width) .slider-buttons {
   transform: scale(0.8);
 }
 
-.banner--large:not(.banner--adapt){
-  aspect-ratio: 1024 / 1080; /* Matches your image's ratio */
-  min-height: auto; /* Let aspect ratio control height */
+.banner--large:not(.banner--adapt) {
+  aspect-ratio: 1024 / 1080; /* Keep the image's original proportions */
+  width: 100%; /* Make it responsive */
+  max-height: 80rem; /* Limit the height of the banner */
+  overflow: hidden; /* Prevent the content from spilling over */
+}
+
+.banner--large:not(.banner--adapt) img {
+  width: 100%; /* Scale image to fit the width */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: contain; /* Ensure the entire image is shown */
 }
