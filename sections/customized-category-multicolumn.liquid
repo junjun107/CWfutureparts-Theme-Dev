@@ -17,26 +17,30 @@
   .brands-heading {
   position: relative; /* Ensures pseudo-elements are positioned relative to the h2 */
   text-align: center; /* Optional: Center aligns the heading text */
+  display: inline-block;
 }
 
 .brands-heading::before,
 .brands-heading::after {
   content: "";
-  width: 180px;
-  height: 15px;
-  display: block;
-  position: absolute;
-  top: 20%; /* Adjust this value as needed for your design */
-  background-color: #000; /* Replace with desired color or style */
+  width: 180px; /* Adjust width as needed */
+  height: 3px; /* Height of the line */
+  display: inline-block;
+  background-color: #000; /* Replace with desired color */
+  position: relative;
+  top: 50%; /* Align vertically with the h2 text */
+  transform: translateY(-50%); /* Adjust alignment for perfect centering */
 }
 
 .brands-heading::before {
-  left: 0;
+  margin-right: 15px; /* Space between line and text */
 }
 
 .brands-heading::after {
-  right: 0;
+  margin-left: 15px; /* Space between line and text */
 }
+
+  
 
   @media screen and (min-width: 750px) {
     .section-{{ section.id }}-padding {
