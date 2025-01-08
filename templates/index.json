@@ -91,6 +91,9 @@
         "slide_LbTnxf",
         "slide_dUQN8w"
       ],
+      "custom_css": [
+        ".slideshow.banner {height: 80rem;}"
+      ],
       "settings": {
         "layout": "full_bleed",
         "slide_height": "adapt_image",
