@@ -91,9 +91,7 @@
         "slide_LbTnxf",
         "slide_dUQN8w"
       ],
-      "custom_css": [
-        ".banner__media {transform: scale(0.9);}"
-      ],
+      "custom_css": [],
       "settings": {
         "layout": "full_bleed",
         "slide_height": "large",
