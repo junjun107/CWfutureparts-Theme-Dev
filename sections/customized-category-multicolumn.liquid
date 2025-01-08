@@ -54,7 +54,12 @@
 .multicolumn-card__image-wrapper .media {
   background-color: transparent !important;
 }
-
+.multicolumn-card__image-wrapper .media img {
+  width: 600px;
+  height: 600px;
+  object-fit: cover;
+}
+  
   @media screen and (min-width: 750px) {
     .section-{{ section.id }}-padding {
       padding-top: {{ section.settings.padding_top }}px;
