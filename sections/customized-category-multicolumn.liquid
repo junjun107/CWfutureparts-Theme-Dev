@@ -14,23 +14,30 @@
       display: flex;
       justify-content: center; /* Center the title within its wrapper */
     }
+
+  
   .brands-heading {
-  position: relative; /* Ensures pseudo-elements are positioned relative to the h2 */
-  text-align: center; /* Optional: Center aligns the heading text */
-  display: inline-block;
+  position: relative;
+  text-align: center; 
 }
 
 .brands-heading::before,
 .brands-heading::after {
   content: "";
-  width: 180px; /* Adjust width as needed */
-  height: 10px; /* Height of the line */
+  width: 180px; /* Length of the bars */
+  height: 10px; /* Height of the bars */
   display: inline-block;
-  background-color: orange; /* Replace with desired color */
+  background: repeating-linear-gradient(
+    -45deg,
+    #d9d9d6,
+    #d9d9d6 3px,
+    hsla(0, 0%, 100%, 0) 0,
+    hsla(0, 0%, 100%, 0) 6px
+  ); /* Patterned gradient */
   position: relative;
   top: 50%; /* Align vertically with the h2 text */
-  transform: translateY(-50%); /* Adjust alignment for perfect centering */
-  border-radius: 50px;
+  transform: translateY(-50%); /* Fine-tune vertical centering */
+  /* border-radius: 50px; */
 }
 
 .brands-heading::before {
