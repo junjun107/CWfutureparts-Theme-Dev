@@ -65,9 +65,10 @@
       "settings": {
         "layout_gap": 0,
         "layout_gap_mobile": 0,
+        "image": "shopify://shop_images/5_f7f0454b-12c9-4273-9d4e-e3a68b6c3bf5.jpg",
         "image_border_thickness": 0,
         "image_ratio": "square",
-        "image_ratio_mobile": "portrait",
+        "image_ratio_mobile": "square",
         "image_position": "1",
         "image_position_mobile": "1",
         "heading": "<p>FAQs</p>",
