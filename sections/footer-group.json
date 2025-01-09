@@ -17,7 +17,7 @@
         "brand_information_cp8Qme": {
           "type": "brand_information",
           "settings": {
-            "show_social": true
+            "show_social": false
           }
         },
         "link_list_izbjCx": {
@@ -41,7 +41,7 @@
         "text_kBdT4T"
       ],
       "custom_css": [
-        "list-social__item{font-size:2rem;}"
+        "list-social__item {font-size: 2rem;}"
       ],
       "settings": {
         "color_scheme": "scheme-1",
