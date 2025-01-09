@@ -3599,11 +3599,10 @@ details-disclosure > details {
 nav.header__inline-menu, list-menu--inline{
   font-weight: bold !important;
 }
-.list-social__item {
-  font-size: 2rem; /* Change this to adjust icon size */
+.footer__content-bottom-wrapper {
+    justify-content: center;
 }
-
 .list-social__item .icon {
-  width: 1em;
-  height: 1em;
+    height: 3.2rem !important;
+    width: 3.2rem;
 }
