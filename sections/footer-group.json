@@ -40,6 +40,9 @@
         "link_list_izbjCx",
         "text_kBdT4T"
       ],
+      "custom_css": [
+        "list-social__item{font-size:2rem;}"
+      ],
       "settings": {
         "color_scheme": "scheme-1",
         "newsletter_enable": true,
