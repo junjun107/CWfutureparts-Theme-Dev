@@ -266,6 +266,9 @@
         "column_VQnmYW",
         "column_JVFCWm"
       ],
+      "custom_css": [
+        ".multicolumn {background-color:#F5F4ED ;}"
+      ],
       "settings": {
         "title": "Industries We Serve",
         "heading_size": "h1",
@@ -273,7 +276,7 @@
         "image_ratio": "adapt",
         "columns_desktop": 4,
         "column_alignment": "left",
-        "background_style": "primary",
+        "background_style": "none",
         "button_label": "Button label",
         "button_link": "",
         "color_scheme": "",
