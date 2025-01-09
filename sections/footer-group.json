@@ -40,9 +40,7 @@
         "link_list_izbjCx",
         "text_kBdT4T"
       ],
-      "custom_css": [
-        ".svg-wrapper {width:40px; height:40px}"
-      ],
+      "custom_css": [],
       "settings": {
         "color_scheme": "scheme-1",
         "newsletter_enable": true,
