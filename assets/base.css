@@ -3599,4 +3599,11 @@ details-disclosure > details {
 nav.header__inline-menu, list-menu--inline{
   font-weight: bold !important;
 }
-
+.svg-wrapper {
+width: 38px !important;
+height: 20px !important;
+}
+.list-social__item .icon {
+height: 4.2rem !important;
+width: 4.2rem !important;
+}
