@@ -105,6 +105,11 @@
                     </h2>
                   </a>
                 </div>
+              {% if product.selected_or_first_available_variant.sku != blank %}
+  <p id="variant-sku">SKU: {{ product.selected_or_first_available_variant.sku }}</p>
+{% else %}
+  <p>SKU: Not available</p>
+{% endif %}
               {%- when 'price' -%}
                 <div id="price-{{ section.id }}" role="status" {{ block.shopify_attributes }}>
                   {%- render 'price',
