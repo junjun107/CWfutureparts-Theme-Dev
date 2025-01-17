@@ -368,7 +368,7 @@
         "column_BYM3Lt": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/Black_Elegant_Minimalist_Customer_Review_Facebook_Post.png",
+            "image": "shopify://shop_images/Stephen_P.png",
             "title": "",
             "text": "",
             "link_label": "",
@@ -378,8 +378,9 @@
         "column_FxErHb": {
           "type": "column",
           "settings": {
-            "title": "Actual Industrial Casters",
-            "text": "<p>Truly industrial quality; Multiple lubrication points; Ball Bearing Swivel; Roller/Needle bearing wheel; solid cast iron wheel and tread. - Amish</p>",
+            "image": "shopify://shop_images/Amish.png",
+            "title": "",
+            "text": "",
             "link_label": "",
             "link": ""
           }
@@ -387,8 +388,9 @@
         "column_f9pEFW": {
           "type": "column",
           "settings": {
-            "title": "Solid Wheel",
-            "text": "<p>These heavy duty casters are rock solid and built for heavy duty use. I will use them on one side of a small workbench that doesn't move too often, but having the two wheels will allow me to shuffle it around when needed. These wheels can take the abuse and will stay put with the locks engaged. - Raverson</p>",
+            "image": "shopify://shop_images/Raverson.png",
+            "title": "",
+            "text": "",
             "link_label": "",
             "link": ""
           }
