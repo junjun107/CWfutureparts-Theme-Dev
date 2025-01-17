@@ -67,7 +67,7 @@
         "share"
       ],
       "custom_css": [
-        ".product-form__input input[type=radio]:checked+label {background-color: orange!important;}"
+        ".product-form__input input[type=\"radio\"]:checked + label {background-color: orange !important; border-color:white;}"
       ],
       "settings": {
         "enable_sticky_info": true,
