@@ -368,8 +368,9 @@
         "column_BYM3Lt": {
           "type": "column",
           "settings": {
-            "title": "Very strong, great quality",
-            "text": "<p>I was looking for some very strong casters to support some very heavy equipment, well over a ton in weight. These casters had no problem doing the job for which they were intended for. - Stephen P</p>",
+            "image": "shopify://shop_images/Black_Elegant_Minimalist_Customer_Review_Facebook_Post.png",
+            "title": "",
+            "text": "",
             "link_label": "",
             "link": ""
           }
@@ -398,6 +399,7 @@
         "column_FxErHb",
         "column_f9pEFW"
       ],
+      "custom_css": [],
       "settings": {
         "title": "What are customers say about our products",
         "heading_size": "h1",
@@ -408,7 +410,7 @@
         "background_style": "primary",
         "button_label": "",
         "button_link": "",
-        "color_scheme": "scheme-4",
+        "color_scheme": "scheme-1",
         "columns_mobile": "1",
         "swipe_on_mobile": false,
         "padding_top": 36,
